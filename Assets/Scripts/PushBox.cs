@@ -24,8 +24,8 @@ public class PushBox : MonoBehaviour
         crosshair = GameObject.FindGameObjectWithTag("Crosshair").GetComponent<RawImage>();
     }
 
-    // FixedUpdate is called once per physics frame
-    void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
